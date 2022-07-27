@@ -1,0 +1,99 @@
+
+.imagem-grande{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.informaçoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 700px;
+
+}
+
+.h1-homepage{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 280px;
+    height: 100px;
+    font-size: 30px;
+}
+
+.paragrafo-homepage{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-homepage{
+    border: none;
+    width: 150px;
+    height: 30px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #FD377E;
+    margin-top: 30px;
+
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+}
+
+.imagem-grande{
+    display: flex;
+}
+    
+.homepage{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.informaçoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 347px;
+    height: 274;
+}
+
+.h1-homepage{
+    color: white;
+    font-size: 38px;
+    padding-top: 10px;
+}
+
+.paragrafo-homepage{
+    color: white;
+    font-size: 16px;
+}
+
+.botao-homepage{
+    border: none;
+    background-color: #FD377E;
+    width: 241px;
+    height: 48px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+}

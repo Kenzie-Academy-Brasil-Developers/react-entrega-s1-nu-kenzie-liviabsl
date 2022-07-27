@@ -1,0 +1,347 @@
+.corpo-total{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+header{
+    width: 100vw;
+    height: 70px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+    
+}
+
+.paragrafo-header{
+    border: none;
+    color: black;
+    font-size: 15px;
+    background-color: #E9ECEF;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+.paragrafo1-descricao{
+    font-weight: 400;
+}
+
+.input-descricao{
+    background-color: #F8F9FA;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.paragrafo2-descricao{
+    color: #868E96;
+    margin-top: 3px;
+}
+
+.corpo{
+
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 10px;
+    border: solid #E9ECEF 3px;
+    border-radius: 5px;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.valores{
+    display: flex;
+}
+
+.tipo{
+    margin-left: 40px;
+}
+
+.input-valor, .input-tipo{
+    background-color: #F8F9FA;
+    border: 2px solid #F8F9FA;
+    border-radius: 8px;
+    width: 120px;
+    padding: 10px;
+}
+
+
+.botao-form{
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #FD377E;
+    padding: 10px;
+    border: none;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.valor-total{
+    background-color: #ffffff;
+    width: 280px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: solid #E9ECEF 2px;
+    border-radius: 5px;
+}
+
+.div-valor-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragrafo-valor-total{
+    font-weight: 700;
+}
+
+.soma{
+    color: #FD377E;
+    font-weight: 700;
+}
+
+.financeiro-total{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.menu-financeiro{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.paragrafo-financeiro{
+    width: 220px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+.ul li{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 3px;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.ul{
+    display: flex;
+    padding-left: 0px;
+}
+
+.entradas{
+    background-color: #E9ECEF;
+
+}
+
+.despesas{
+    background-color: #E9ECEF;
+
+}
+
+.todos{
+    background-color: #FD377E;
+}
+
+
+.div-cards{
+    display: flex;
+}
+
+.paragrafo-card{
+    margin-left: 15px;
+}
+
+.paragrafo-card2{
+    margin-left: 200px;
+}
+
+.img-delete{
+    background-color: none;
+    
+    width: 15px;
+    height: 20px;
+}
+
+.tipo-card{
+    margin-left: 15px;
+    margin-top: -10px;
+}
+
+.button-image{
+    border: none;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-cards{
+    list-style-type: none;
+}
+
+.ul-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 0px;
+}
+
+.cards{
+    background-color: #F8F9FA;
+    width: 360px;
+    border-radius: 5px;
+    border: solid rgb(36, 193, 76);
+    border-bottom-width: 0px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 10px;
+    
+   
+}
+
+.cards-despesa{
+    background-color: #F8F9FA;
+    width: 360px;
+    border-radius: 5px;
+    border: solid rgb(111, 120, 113);
+    border-bottom-width: 0px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 10px;
+}
+@media only screen and (min-width: 768px){
+
+.corpo-e-total{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.corpo{
+    margin-top: 60px;
+    height: 430px;
+}
+
+header{
+    width: 100vw;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+    
+}
+
+
+.paragrafo-header{
+    border: none;
+    color: black;
+    font-size: 20px;
+    background-color: #E9ECEF;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.financeiro-total{
+    background-color: white;
+    margin-top: 30px;
+    width: 700px;
+}
+
+.paragrafo-financeiro{
+    font-size: 20px;
+}
+
+.ul li{
+    border-radius: 10px;
+    padding: 10px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-image{
+    border: none;
+    background-color: #F8F9FA;
+    cursor: pointer;
+}
+
+.lista-cards{
+    list-style-type: none;
+}
+
+.ul-lista{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    background-color: #F8F9FA;
+    width: 700px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: solid rgb(36, 193, 76);
+    border-bottom-width: 0px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 10px;
+   
+}
+
+.cards-despesa{
+    background-color: #F8F9FA;
+    width: 700px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: solid rgb(143, 147, 144);
+    border-bottom-width: 0px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 10px;
+   
+}
+
+.paragrafo-card2{
+    margin-left: auto;
+}
+
+.img-delete{
+    margin-right: 20px;
+}
+
+}
