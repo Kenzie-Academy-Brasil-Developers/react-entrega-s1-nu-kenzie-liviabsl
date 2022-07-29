@@ -8,14 +8,14 @@ function App() {
   const [homePage, setHomePage] = useState(true)
 
   const [listTransactions, setListTransactions] = useState([])
-
+  const [backup, setBackUp] = useState([])
 
   return (
     <div className="App">
       {homePage ? (
       <HomePage setHomePage = {setHomePage}/>
       ):(
-      <FinancesPage setHomePage = {setHomePage} listTransactions = {listTransactions} setListTransactions = {setListTransactions}/>
+      <FinancesPage setHomePage = {setHomePage} listTransactions = {listTransactions} setListTransactions = {setListTransactions} backup={backup} setBackUp={setBackUp}/>
       
       )}
     </div>

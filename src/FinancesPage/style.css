@@ -153,18 +153,39 @@ header{
 
 .entradas{
     background-color: #E9ECEF;
+    cursor: pointer;
 
 }
 
 .despesas{
     background-color: #E9ECEF;
+    cursor: pointer;
 
 }
 
 .todos{
     background-color: #FD377E;
+    cursor: pointer;
 }
 
+.div-vazio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-vazio{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+}
+
+.imagem-vazio{
+    width: 350px;
+    margin-top: 10px;
+}
 
 .div-cards{
     display: flex;
@@ -277,6 +298,20 @@ header{
 
 .paragrafo-financeiro{
     font-size: 20px;
+}
+
+
+.h1-vazio{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.imagem-vazio{
+    width: 600px;
+    margin-top: 25px;
 }
 
 .ul li{

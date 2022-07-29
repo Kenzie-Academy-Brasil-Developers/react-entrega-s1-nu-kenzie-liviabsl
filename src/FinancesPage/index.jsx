@@ -1,15 +1,30 @@
 import "./style.css";
 import { useState } from "react";
 import List from "../list";
+import Vazio from "../cardVazio";
 
 function FinancesPage({
   SetHome,
   setHomePage,
   listTransactions,
   setListTransactions,
+  backup,
+  setBackUp
 }) {
   function change() {
     setHomePage((homePage) => !homePage);
+  }
+
+  function FiltroEntrada(){
+    setListTransactions(backup.filter((item) => item.type === "Entrada"))
+  }
+
+  function FiltroDespesas(){
+    setListTransactions(backup.filter((item) => item.type === "Despesa"))
+  }
+
+  function FiltroTodos(){
+    setListTransactions(backup)
   }
 
   const [description, SetDescription] = useState("");
@@ -29,8 +44,19 @@ function FinancesPage({
         parseInt(value)
       },
     ]);
+    setBackUp([
+      ...backup,
+      {
+        description: description,
+        type: type,
+        value: 
+        type === "Despesa" ?
+        parseInt(value) * -1
+        :
+        parseInt(value)
+      },
+    ]);
   }
-  console.log(listTransactions);
 
   const Reduce = listTransactions.reduce((a, b) =>  a + b.value,0)
 
@@ -61,7 +87,7 @@ function FinancesPage({
             <div className="valores">
               <div className="valor">
                 <p className="paragrafo-valor">Valor</p>
-                <input type={Number}
+                <input type="Number"
                   value={value}
                   className="input-valor"
                   onChange={(event) => SetValue(event.target.value)}
@@ -101,13 +127,18 @@ function FinancesPage({
           <div className="menu-financeiro">
             <p className="paragrafo-financeiro">Resumo financeiro</p>
             <ul className="ul">
-              <li className="todos">Todos</li>
-              <li className="entradas">Entradas</li>
-              <li className="despesas">Despesas</li>
+              <li className="todos" onClick={()=>FiltroTodos()}>Todos</li>
+              <li className="entradas" onClick={()=>FiltroEntrada()}>Entradas</li>
+              <li className="despesas" onClick={()=>FiltroDespesas()}>Despesas</li>
             </ul>
           </div>
 
-          <List listTransactions={listTransactions} setListTransactions={setListTransactions}/>
+          {
+            listTransactions.length >= 1 ?
+            <List listTransactions={listTransactions} setListTransactions={setListTransactions}backup={backup} setBackUp={setBackUp}/>
+            :
+            <Vazio/>
+          }
         </div>
       </div>
     </div>
